@@ -22,12 +22,12 @@
 
 		<div v-if="charts.BarData && currentRoute === '/bar'">
 			Chart: {{charts.BarData.title }}
-			<column-chart :data="charts.BarData"></column-chart>
+			<column-chart :data="charts.BarData.Data"></column-chart>
 		</div>
 
 		<div v-if="charts.LineData && currentRoute === '/line'">
 			Chart: {{charts.LineData.title}}
-			<line-chart :data="charts.LineData"></line-chart>
+			<line-chart :data="charts.LineData.Data"></line-chart>
 		</div>
 
 		<div v-if="currentRoute === '/local'">
